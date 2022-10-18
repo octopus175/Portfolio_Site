@@ -3,5 +3,6 @@
 .App {
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
-  height: 100vh;
+  background-image: linear-gradient(to bottom, #051937, #072c66, #223d97, #4a4cc8, #7b58f8);
+  background-size: 100% auto;
 }

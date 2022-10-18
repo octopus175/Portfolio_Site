@@ -4,7 +4,7 @@ function About() {
 
     return(
         <section id="about" className='about'>
-            <h1>About me</h1>
+            <h1>About page</h1>
         </section>
     )
 }

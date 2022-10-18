@@ -1,11 +1,16 @@
 import {Link} from 'react-scroll'
 import './Navbar.style.css'
-
+ 
 function Navbar() {
     return(
         <header className='navbar'>
             <nav>
                 <ul>
+                    <li>
+                        <Link activeClass="active" spy smooth to="home">
+                        HOME
+                        </Link>
+                    </li>
                     <li>
                         <Link activeClass="active" spy smooth to="about">
                         ABOUT
