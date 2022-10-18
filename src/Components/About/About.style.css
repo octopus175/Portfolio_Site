@@ -1,0 +1,16 @@
+
+.about {
+    display: grid;
+    min-height: 100vh;
+    min-width: 1024px;
+    background-image: linear-gradient(to bottom, #051937, #072c66, #223d97, #4a4cc8, #7b58f8);
+    place-items: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
