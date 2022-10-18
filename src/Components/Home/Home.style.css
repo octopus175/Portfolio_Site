@@ -7,11 +7,11 @@
 
 .introduction {
     text-align: left;
-    padding-left: 10rem;
-    padding-right: 10rem;
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 h1 {

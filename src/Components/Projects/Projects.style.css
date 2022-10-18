@@ -1,0 +1,6 @@
+.projects{
+    display: grid;
+    min-height: 100vh;
+    color: #fff;
+    align-items: center;
+}
