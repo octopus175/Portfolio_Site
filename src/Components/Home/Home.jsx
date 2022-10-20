@@ -13,7 +13,12 @@ function Home() {
                     Currently I am looking for something to do, for the love of god please hire me.
                     </p>
                 </div>
-                <button className='resume-button'>Download Resume</button>
+                <div className='resume'>
+                    <span className='resume-button-arrow'>{'>'}</span>
+                <button className='resume-button' onClick={() => {window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley', '_blank')}}>Download Resume</button>
+                    <span className='resume-button-arrow'>{'<'}</span>
+                </div>
+                
             </div>
         </section>
     )
