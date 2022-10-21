@@ -14,10 +14,6 @@ h1 {
     padding: 0;
 }
 
-.about-container{
-    display: flex;
-}
-
 .about-paragraph{
    max-width: 650px;
    text-align: justify;
@@ -26,7 +22,7 @@ h1 {
 
 .skills{
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     justify-content: center;
     flex-flow: row wrap;
 }
@@ -43,7 +39,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 100px;
     height: 75px;
+    flex-basis: 25%;
 }
 
