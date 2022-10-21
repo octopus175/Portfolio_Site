@@ -1,6 +1,34 @@
 .projects{
-    display: grid;
+    display: flex;
     min-height: 100vh;
     color: #fff;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.project-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.project-card-image {
+    max-width: 650px;
+}
+
+.project-card-detail {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 250px;
+}
+
+.project-card-detail-links{
+    display: flex;
+    flex-direction: column;
+}
+.project-card-detail-text{
+    text-align: justify;
 }
