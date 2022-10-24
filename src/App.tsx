@@ -9,9 +9,12 @@ function App() {
   return (
     <div className='App'>
       <Navbar />
-      <Home />
-      <About />
-      <Projects />
+      <div className='main-layout'>
+        <Home />
+        <About />
+        <Projects />
+      </div>
+      
     </div>
   );
 }
