@@ -1,32 +1,38 @@
 import './Projects.style.css'
-import image from '../../Assets/Images/to-do-list-app.png'
+import ProjectData from './ProjectData'
 
 function Projects() {
     const displayProjects = () => {
-        return (
-            <div className='project-card'>
-                <img alt='project_name' src={image} className='project-card-image'></img>
-                <div className='project-card-detail'>
-                    <p className='project-card-detail-text'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </p>
-                    <div className='project-card-detail-techstacks'>
-
-                    </div>
-                    <div className='project-card-detail-links'>
-                        <a href='https://github.com/octopus175/to-do-list-app' target="_blank" rel="noreferrer">Github Repo</a>
-                        <a href='https://steady-tiramisu-94515d.netlify.app/' target="_blank" rel="noreferrer">Live Demo</a>
+        return ProjectData.map((project, index) => {
+            return (
+                <div className='project-card' key={index}>
+                    <span className='project-card-name'>{project.project_name}</span>
+                    <a href={project.demo_link} target="_blank" rel="noreferrer">
+                        <img alt='project_name' src={project.project_image} className='project-card-image'></img>
+                    </a>
+                    <div className='project-card-detail'>
+                        <p className='project-card-detail-text'>
+                            {project.description}
+                        </p>
+                        <div className='project-card-detail-techstacks'>
+                            {project.tech_stack.map((tech) => {
+                                return <span className='project-card-detail-techstacks-single'>{tech}</span>
+                            })}
+                        </div>
+                        <div className='project-card-detail-links'>
+                            <a href={project.github_link} target="_blank" rel="noreferrer" className='project-card-detail-url'>Github Repo</a>
+                            <a href={project.demo_link} target="_blank" rel="noreferrer" className='project-card-detail-url'>Live Demo</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        )
+            )
+        })
+        
     }
 
     return(
         <section id="projects" className='projects'>
-            <div>
-                {displayProjects()}
-            </div>
+            {displayProjects()}
         </section>
     )
 }
