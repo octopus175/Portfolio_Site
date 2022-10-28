@@ -12,12 +12,12 @@ function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link activeClass="active" spy offset={-20} smooth to="about">
+                        <Link activeClass="active" smooth spy offset={-25} to="about">
                         ABOUT
                         </Link>
                     </li>
                     <li>
-                        <Link activeClass="active" smooth spy to="projects">
+                        <Link activeClass="active" smooth spy offset={-50} to="projects">
                         PROJECTS
                         </Link>
                     </li>

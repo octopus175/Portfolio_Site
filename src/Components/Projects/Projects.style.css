@@ -1,4 +1,20 @@
 .projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.projects-title {
+    font-size: 2em;
+    padding: 0;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.projects-layout{
     display: grid;
     min-height: 100vh;
     grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
@@ -6,9 +22,10 @@
     color: #fff;
 }
 @media (max-width: 767px) {
-    .projects{
+    .projects-layout{
         grid-template-columns: repeat(1, 1fr);
     }
+
 }
 
 .project-card {

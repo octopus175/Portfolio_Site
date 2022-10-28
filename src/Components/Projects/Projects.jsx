@@ -32,7 +32,11 @@ function Projects() {
 
     return(
         <section id="projects" className='projects'>
-            {displayProjects()}
+            <h1 className='projects-title'>Projects</h1>
+            <div className='projects-layout'>
+                {displayProjects()}
+            </div>
+            
         </section>
     )
 }
